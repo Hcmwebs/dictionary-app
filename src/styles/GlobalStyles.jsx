@@ -1,9 +1,11 @@
 import { createGlobalStyle } from 'styled-components'
 
-createGlobalStyle
+
 const GlobalStyles = createGlobalStyle`
   :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --fontFamily-1: 'Inconsolata', monospace;
+  --font-family-2: 'Lora', serif;
+  --font-family-3: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
