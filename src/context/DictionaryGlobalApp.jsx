@@ -1,11 +1,12 @@
 import React, { createContext, useEffect, useContext, useState } from 'react'
+const url = 'https://api.dictionaryapi.dev/api/v2/entries/en/'
 
 const DictionaryAppContext = createContext()
 
 const DictionaryAppProvider = ({ children }) => {
-	const [greetings, setGreetings] = useState('Hello')
+	const [word, setWord] = useState('hello')
 	return (
-		<DictionaryAppContext.Provider value={{ greetings }}>
+		<DictionaryAppContext.Provider value={{ word }}>
 			{children}
 		</DictionaryAppContext.Provider>
 	)
