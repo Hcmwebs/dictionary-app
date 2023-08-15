@@ -1,11 +1,13 @@
 import React from 'react'
 import { useGlobalContext } from './context/DictionaryGlobalApp'
+import { Header, Mainbody } from './components'
 
 const App = () => {
   const{word} = useGlobalContext()
   return (
     <div>
-      <h1>{word}</h1>
+      <Header />
+      <Mainbody />
     </div>
   )
 }
