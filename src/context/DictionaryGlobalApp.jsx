@@ -4,7 +4,7 @@ const url = 'https://api.dictionaryapi.dev/api/v2/entries/en'
 const DictionaryAppContext = createContext()
 
 const DictionaryAppProvider = ({ children }) => {
-	const [word, setWord] = useState('binary')
+	const [word, setWord] = useState('it is on')
 	const tempUrl = `url/${word}`
 	console.log(tempUrl)
 	return (
